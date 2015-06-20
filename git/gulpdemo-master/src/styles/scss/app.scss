@@ -1,0 +1,242 @@
+// Sass Example
+// Variables
+@import "mymixins";
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
+@import "myvariables";
+
+// SCSS Code
+/*
+html {
+  height: 100%;
+}
+*/
+body {
+  margin: 0px;
+  height: 100%;
+  bottom: 0px;
+  @include linear-gradient(to top, lighten($grey-color, 70%), white);
+
+  a {
+    text-decoration: none;
+  }
+}
+
+section {
+  @include outer-container;
+  height: 100%;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  line-height: 160%;
+  text-decoration: none;
+
+  @include media($mobile) {
+    font-size: 12px;
+    line-height: 125%;
+  }
+
+  header {
+    @include footerandheader();
+    height: 70px;
+    line-height: 95px;
+    font-family: "La Belle Aurore", cursive;
+    padding-left: 20px;
+    font-size: 40px;
+    position: relative;
+
+    @include media ($mobile) {
+      height: 40px;
+      line-height: 50px;
+      padding-left: 10px;
+      font-size: 20px;
+    }
+
+    a {
+      color: white;
+      margin-top: 20px;
+    }
+
+    span {
+      font-size: 14px;
+      font-family: "Raleway", sans-serif;
+      // ---------------------------
+      // TODO
+      // ---------------------------
+      position: absolute;
+      right: 10px;
+      color: lighten($grey-color, 80%);
+
+      @include media($mobile) {
+        display: none;
+      }
+    }
+  }
+  aside {
+    @include span-columns(3);
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+    margin-top: 10px;
+    padding-top: 10px;
+
+    @include media($mobile) {
+      @include span-columns(4);
+      @include omega();
+      height: 20px;
+      margin: 0px;
+      padding-top: 0px;
+    }
+
+    div {
+      color: $grey-color;
+      opacity: 1;
+      height: 100%;
+
+      ul {
+        list-style: none;
+        line-height: 250%;
+        padding-left: 20px;
+
+        @include media($mobile) {
+          line-height: 150%;
+          padding-left: 10px;
+
+
+          li {
+            float: left;
+            margin-right: 15px;
+          }
+        }
+      }
+
+
+    }
+  }
+  article {
+    @include span-columns(9);
+    @include omega();
+    margin-top: 15px;
+    //border-top: lighten($grey-color, 50%) thin solid;
+
+    @include media($mobile) {
+      @include span-columns(4);
+      border-top: lighten($grey-color, 50%) thin solid;
+      margin-top: 30px;
+    }
+
+    .teaser {
+      @include omega();
+      border-bottom: lighten($grey-color, 50%) thin solid;
+      padding: 16px;
+
+      @include media ($mobile) {
+        padding: 10px;
+      }
+
+      img {
+        float: left;
+      }
+
+
+      }
+
+
+      a {
+        color: black;
+        font-weight: bold;
+      }
+
+      p {
+        margin-bottom: 0px;
+      }
+    }
+
+    .detail {
+      @include omega();
+      padding: 16px;
+
+      a {
+        color: black;
+        font-weight: bold;
+        font-size: 36px;
+
+        @include media($mobile) {
+          font-size: 18px;
+        }
+      }
+
+      span {
+        color: #999;
+      }
+
+      img {
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+        @include media($mobile) {
+          margin-top: 5px;
+          margin-bottom: 0px;
+        }
+      }
+
+
+    }
+
+  img {
+    margin-right: 10px;
+
+    @include media($mobile) {
+      margin-right: 7px;
+    }
+
+  }
+
+  footer {
+    @include footerandheader();
+    text-align: center;
+    color: lighten($grey-color, 50%);
+    padding-top: 5px;
+    height: 40px;
+    position: relative;
+
+    @include media($mobile) {
+      span {
+        display: none;
+      }
+    }
+
+    #icons {
+      position: absolute;
+      right: 0px;
+      top: 5px;
+
+      .media-icon {
+        background-image: $icons;
+        width: $icon-width;
+        height: $icon-height;
+        margin-right: 5px;
+        float: left;
+        border-radius: 5px;
+        opacity: 0.9;
+      }
+
+      #facebook {
+        background-position: -($icon-width *2) +($icon-width*1);
+      }
+      #youtube {
+        background-position: -($icon-width *4) +($icon-width*1);
+      }
+      #twitter {
+        background-position: -($icon-width *1) +($icon-width*1);
+      }
+      #pinterest {
+        background-position: -($icon-width *3) +($icon-width*1);
+      }
+
+      @include media($mobile) {
+        $icon-width: 20px;
+      }
+    }
+
+  }
+}

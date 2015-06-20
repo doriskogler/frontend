@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
+<defs>
+<font id="category" horiz-adv-x="1000" >
+<font-face font-family="category" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="facebook" unicode="&#xe800;" d="m535 843v-147h-87q-48 0-65-20t-17-60v-106h164l-22-165h-142v-424h-171v424h-142v165h142v122q0 104 58 161t155 57q82 0 127-7z" horiz-adv-x="571.4" />
+<glyph glyph-name="food" unicode="&#xe801;" d="m357 814v-357q0-34-20-62t-51-39v-435q0-29-21-50t-51-21h-71q-29 0-50 21t-22 50v435q-31 11-51 39t-20 62v357q0 15 11 25t25 11 25-11 10-25v-232q0-14 11-25t25-11 25 11 11 25v232q0 15 10 25t26 11 25-11 10-25v-232q0-14 11-25t25-11 25 11 11 25v232q0 15 10 25t25 11 26-11 10-25z m429 0v-893q0-29-21-50t-51-21h-71q-29 0-50 21t-22 50v286h-125q-7 0-12 5t-5 13v446q0 74 52 127t126 52h143q15 0 25-11t11-25z" horiz-adv-x="785.7" />
+<glyph glyph-name="belowground-rail" unicode="&#xe802;" d="m50 775l275-150 275 150z m100-200l-150-100 0-500c0-25 25-50 50-50l550 0c25 0 50 25 50 50l0 500-150 100z m50-100l250 0 100-50 0-100-450 0 0 100z m-50-350c28 0 50-22 50-50 0-28-22-50-50-50-28 0-50 22-50 50s22 50 50 50z m350 0c28 0 50-22 50-50 0-28-22-50-50-50-28 0-50 22-50 50s22 50 50 50z" horiz-adv-x="650" />
+</font>
+</defs>
+</svg>
